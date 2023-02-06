@@ -10,8 +10,8 @@ export default function ListeProduits() {
         <h2>Liste des produits</h2>
         <section className="produits">
         {
-          produits.map(function(prd) {
-            return <Produit nom={prd.nom} prix={prd.prix}/>
+          produits.map(function(produit) {
+            return <Produit nom={produit.nom} prix={produit.prix} pid={produit.id} />
           })
         }
         </section>

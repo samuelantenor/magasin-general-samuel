@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/magasin-general-Samuel/static/css/main.cc3c0bdd.css",
+    "main.js": "/magasin-general-Samuel/static/js/main.e1d797df.js",
+    "index.html": "/magasin-general-Samuel/index.html",
+    "main.cc3c0bdd.css.map": "/magasin-general-Samuel/static/css/main.cc3c0bdd.css.map",
+    "main.e1d797df.js.map": "/magasin-general-Samuel/static/js/main.e1d797df.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc3c0bdd.css",
+    "static/js/main.e1d797df.js"
+  ]
+}

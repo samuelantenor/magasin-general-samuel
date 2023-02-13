@@ -1,8 +1,7 @@
 import './Produit.scss';
 
-export default function Produit(props) {
-    let panier = props.panier;
-    let setPanier = props.setPanier;
+export default function Produit({panier,setPanier,nom,prix,pid}) {
+    
     function ajouterPanier() {
       // Premièrement il faut obtenir une copie conforme du panier (clone)
       // let clonePanier = JSON.parse(JSON.stringify(panier));
@@ -11,11 +10,11 @@ export default function Produit(props) {
       
 
       // On doit ajouter le produit au panier
-      if(clonePanier[props.pid]) {
-        clonePanier[props.pid]++;
+      if(clonePanier[pid]) {
+        clonePanier[pid]++;
       }
       else {
-        clonePanier[props.pid] = {prix: props.prix, qte: 1};
+        clonePanier[pid] = {prix: prix, qte: 1};
       }
 
       // Puis on doit donner à setPanier la nouvelle valeur du panier
@@ -24,9 +23,9 @@ export default function Produit(props) {
 
     return (
         <article className="Produit">
-          <img src={'images-produits/' + props.pid + '.webp'} alt={props.nom} />
-          <span className='nom'>{props.nom}</span>
-          <span className="prix">{props.prix}</span>
+          <img src={'images-produits/' + pid + '.webp'} alt={nom} />
+          <span className='nom'>{nom}</span>
+          <span className="prix">{prix}</span>
           <button onClick={ajouterPanier}>Ajouter au panier</button>
         </article>
     );

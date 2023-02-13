@@ -6,9 +6,8 @@ import {useState} from 'react';
 
 function Appli() {
   // On utilise le HOOK useState()
-  const etatPanier = useState({});
-  let panier = etatPanier[0];
-  let setPanier = etatPanier[1]; 
+  const [panier, setPanier] = useState({});
+  
 
   return (
     <div className="Appli">

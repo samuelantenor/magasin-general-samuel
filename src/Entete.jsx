@@ -1,5 +1,6 @@
 import './Entete.scss';
-
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import Badge from '@mui/material/Badge';
 function Entete(props) {
 	let panier = props.panier;
 	console.log("Le panier qui nous vient de Appli affiché dans Entete : ", panier);
@@ -9,7 +10,12 @@ function Entete(props) {
 			<nav>
 				<span>Produits</span>
 				<span>À propos</span>
-				<span>Panier ({Object.values(panier).length})</span>
+				<span>
+				<Badge badgeContent={5} color="secondary">
+				<ShoppingCartIcon/>
+					 
+					 </Badge> 
+					 </span>
 			</nav>
 		</header>
 	)
